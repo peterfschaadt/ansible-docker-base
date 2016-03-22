@@ -7,7 +7,7 @@ LABEL project='ansible-docker-base' \
 
 # Ansible: https://pypi.python.org/pypi/ansible
 # Stable: v1.9.4
-# Dev: v2.0.0.2
+# Dev: v2.0.1.0
 
 RUN echo '[DOCKER] Installing build-essential, python-dev, python-setuptools...' && \
   DEBIAN_FRONTEND=noninteractive apt-get update && \

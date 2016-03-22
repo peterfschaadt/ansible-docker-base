@@ -5,9 +5,14 @@ LABEL project='ansible-docker-base' \
   version='v1.1.0'
 
 
-# Ansible: https://pypi.python.org/pypi/ansible
-# Stable: v1.9.4
-# Dev: v2.0.1.0
+# Ansible Releases
+PyPI: https://pypi.python.org/pypi/ansible
+GitHub: https://github.com/ansible/ansible/releases
+
+ENV ANSIBLE_STABLE=1.9.4
+ENV ANSIBLE_DEV=2.0.1.0
+
+ENV ANSIBLE_VERSION=${ANSIBLE_STABLE}
 
 RUN echo '[DOCKER] Installing build-essential, python-dev, python-setuptools...' && \
   DEBIAN_FRONTEND=noninteractive apt-get update && \
@@ -31,7 +36,7 @@ RUN echo '[DOCKER] Displaying pip version number...' && \
   pip --version
 
 RUN echo '[DOCKER] Installing Ansible v1.9.4 with pip...' && \
-  pip install ansible==1.9.4
+  pip install ansible==${ANSIBLE_VERSION}
 
 ONBUILD RUN \
   echo '[DOCKER] Updating TLS certificates...' && \

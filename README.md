@@ -5,6 +5,12 @@ Installs the latest version of [Ansible](https://github.com/ansible/ansible) in 
 
 OS: Ubuntu 14.04 LTS - Trusty Tahr
 
+Versions
+--------
+
+Ansible Stable = v1.9.5
+Ansible Dev = v2.0.1.0
+
 Usage
 -----
 

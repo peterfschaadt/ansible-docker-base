@@ -9,7 +9,7 @@ LABEL project='ansible-docker-base' \
 PyPI: https://pypi.python.org/pypi/ansible
 GitHub: https://github.com/ansible/ansible/releases
 
-ENV ANSIBLE_STABLE=1.9.5
+ENV ANSIBLE_STABLE=1.9.6
 ENV ANSIBLE_DEV=2.0.2.0
 
 ENV ANSIBLE_VERSION=${ANSIBLE_STABLE}

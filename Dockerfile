@@ -10,7 +10,7 @@ PyPI: https://pypi.python.org/pypi/ansible
 GitHub: https://github.com/ansible/ansible/releases
 
 ENV ANSIBLE_STABLE=1.9.5
-ENV ANSIBLE_DEV=2.0.1.0
+ENV ANSIBLE_DEV=2.0.2.0
 
 ENV ANSIBLE_VERSION=${ANSIBLE_STABLE}
 
@@ -35,7 +35,7 @@ RUN echo '[DOCKER] Upgrading pip with pip...' && \
 RUN echo '[DOCKER] Displaying pip version number...' && \
   pip --version
 
-RUN echo '[DOCKER] Installing Ansible v1.9.4 with pip...' && \
+RUN echo '[DOCKER] Installing Ansible v${ANSIBLE_VERSION} with pip...' && \
   pip install ansible==${ANSIBLE_VERSION}
 
 ONBUILD RUN \

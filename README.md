@@ -8,8 +8,8 @@ OS: Ubuntu 14.04 LTS - Trusty Tahr
 Versions
 --------
 
-Ansible Stable = v1.9.5
-Ansible Dev = v2.0.1.0
+Ansible Stable = v1.9.6
+Ansible Dev = v2.0.2.0
 
 Usage
 -----

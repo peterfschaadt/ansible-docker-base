@@ -10,7 +10,7 @@ Versions
 --------
 
 Ansible Stable = v1.9.6
-Ansible Dev = v2.0.2.0
+Ansible Dev = v2.1.0.0
 
 
 Usage

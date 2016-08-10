@@ -18,14 +18,14 @@ Docker Hub
 
 [peterfschaadt/ansible-docker-base](https://hub.docker.com/r/peterfschaadt/ansible-docker-base)
 
-To pull this image from the Docker Hub:
+To pull this image from the Docker Hub:  
 ```$ docker pull peterfschaadt/ansible-docker-base:latest```
 
 
 Usage
 -----
 
-To use this as a base image, put this at the beginning of your Dockerfile:
+To use this as a base image, put this at the beginning of your Dockerfile:  
 ```FROM peterfschaadt/ansible-docker-base:latest```
 
 

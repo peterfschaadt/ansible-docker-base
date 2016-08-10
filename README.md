@@ -13,6 +13,14 @@ Ansible Stable = v1.9.6
 Ansible Dev = v2.1.0.0
 
 
+Docker Hub
+----------
+
+[peterfschaadt/ansible-docker-base](https://hub.docker.com/r/peterfschaadt/ansible-docker-base)
+
+```$ docker pull peterfschaadt/ansible-docker-base:latest```
+
+
 Usage
 -----
 

@@ -14,12 +14,13 @@ ENV ANSIBLE_DEV=2.1.0.0
 
 ENV ANSIBLE_VERSION=${ANSIBLE_STABLE}
 
-RUN echo '[DOCKER] Installing build-essential, python-dev, python-setuptools...' && \
+RUN echo '[DOCKER] Installing build-essential, python-dev, python-setuptools, and libssl-dev...' && \
   DEBIAN_FRONTEND=noninteractive apt-get update && \
   apt-get install -y \
     build-essential \
     python-dev \
-    python-setuptools && \
+    python-setuptools \
+    libssl-dev && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

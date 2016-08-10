@@ -1,4 +1,3 @@
-
 FROM ubuntu:14.04
 MAINTAINER Peter Schaadt <peter.schaadt@gmail.com>
 LABEL project='ansible-docker-base' \
